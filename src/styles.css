@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #282c34;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  header nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  header nav ul li a {
+    color: #61dafb;
+    text-decoration: none;
+  }
+  
+  section {
+    margin: 20px;
+  }
+  
+  footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
