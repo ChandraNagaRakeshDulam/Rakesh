@@ -13,8 +13,19 @@ const educationDetails = [
     institution: 'BVC College of Engineering, India',
     duration: 'June 2017 - May 2021',
     gpa: '8.27 / 10.0'
-  }
-  // Add more education details as needed
+  },
+  {
+    degree: 'Intermediate in Maths, Physics, Chemistry',
+    institution: 'Sri Chaitanya Junior College, India',
+    duration: 'June 2015 - March 2017',
+    gpa: '9.52 / 10'
+  },
+  {
+    degree: 'High School',
+    institution: 'Sri Shirdi Sai Vidya Niketan, India',
+    duration: 'June 2002 - April 2015',
+    gpa: '9.2 / 10.0'
+  },
 ];
 
 const Education = () => {

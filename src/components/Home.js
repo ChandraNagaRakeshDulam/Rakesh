@@ -1,23 +1,24 @@
 import React from 'react';
 import './Home.css';
+//import locationIcon from './location-icon.png'; // Make sure to have an appropriate location icon image
 
 const Home = () => {
   return (
     <div className="home">
-      <div className="hero-section">
-        <div className="hero-content">
-          <h1>Chandra Naga Rakesh Dulam</h1>
-          <p>Full Stack Developer | AI Enthusiast | Java Expert</p>
-          <a href="#about" className="btn">Learn More</a>
-        </div>
+      <div className="background-animation">
+        <div className="floating-circle"></div>
+        <div className="floating-circle"></div>
+        <div className="floating-circle"></div>
+        <div className="floating-circle"></div>
+        <div className="floating-circle"></div>
       </div>
-      <section id="about" className="about-section">
-        <h2>About Me</h2>
-        <p>
-          Nearly 3 years of experience as a Java full stack developer, demonstrating expertise in both frontend 
-          and backend technologies to deliver comprehensive and efficient solutions.
-        </p>
-      </section>
+      <div className="content">
+        <h1>Hi, I'm Rakesh.</h1>
+        <div className="location">
+          <span>Charlotte, NC</span>
+        </div>
+        <p>I am a full-stack developer with a passion for creating innovative solutions and improving user experiences.</p>
+      </div>
     </div>
   );
 };
