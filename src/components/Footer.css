@@ -1,7 +1,8 @@
 .footer {
-  background-color: #282c34;
-  color: white;
-  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 0px;
+  height: auto;
   position: relative;
   bottom: 0;
   width: 100%;
@@ -22,15 +23,14 @@
 }
 
 .footer a {
-  color: #61dafb;
+  color: #000000;
   text-decoration: none;
-  margin: 0 5px;
-  height: 100;
+  margin: 0 0px;
 }
 
-/* .footer a:hover {
-  text-decoration: underline;
-} */
+.footer a:hover {
+  cursor: pointer;
+}
 
 .footer p {
   margin: 5px 0;
@@ -38,6 +38,20 @@
 
 @media (max-width: 600px) {
   .footer {
-    padding: 10px;
+    padding: 0px;
   }
+}
+
+.social-links {
+  margin: 10px 0;
+}
+
+.social-links a {
+  color: #000000;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
 }
