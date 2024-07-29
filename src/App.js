@@ -8,19 +8,28 @@ import Projects from './components/Projects';
 import Education from './components/Education';
 import Footer from './components/Footer';
 import './styles.css';
+import logo from './RD.png';
 
 function App() {
   return (
     <Router>
       <div className="App">
         <nav className="navbar">
-        {/* <div className="nav-name">Rakesh Dulam</div> */}
+          <img src={logo} alt="Logo" className="logo" />
           <ul>
             <li><Link to="home" smooth={true} duration={500}>Home</Link></li>
             <li><Link to="skills" smooth={true} duration={500}>Skills</Link></li>
             <li><Link to="experience" smooth={true} duration={500}>Experience</Link></li>
             <li><Link to="projects" smooth={true} duration={500}>Projects</Link></li>
             <li><Link to="education" smooth={true} duration={500}>Education</Link></li>
+            <li className="dropdown">
+              <span>Resume</span>
+              <div className="dropdown-content">
+                <a href="/Resume_Rakesh.pdf" target="_blank" rel="noopener noreferrer">View</a>
+                <a href="/Resume_Rakesh.pdf" download>Download</a>
+              </div>
+            </li>
+            <li><Link to="connect" smooth={true} duration={500}>Let's Connect</Link></li>
           </ul>
         </nav>
         <div className="content">
@@ -31,8 +40,8 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/education" element={<Education />} />
           </Routes>
-          <Footer />
         </div>
+        <Footer />
       </div>
     </Router>
   );

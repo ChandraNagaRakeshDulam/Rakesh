@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.css';
 import './Education.css';
+import './Connect.css';
 
 const educationDetails = [
   {
@@ -10,7 +11,7 @@ const educationDetails = [
     gpa: '3.8 / 4.0'
   },
   {
-    degree: 'Bachelor of Technology in Electronics & Communication Engineering',
+    degree: 'B.Tech in Electronics & Communication Engineering',
     institution: 'BVC College of Engineering, India',
     duration: 'June 2017 - May 2021',
     gpa: '8.27 / 10.0'
@@ -91,9 +92,7 @@ const experiences = [
       'Collaborated with faculty and peer tutors to optimize teaching materials, resulting in a 35% increase in student satisfaction scores and a 20% reduction in the time needed to grasp key concepts.'
     ]
   }
-  // Add more experiences as needed
 ];
-
 
 const Home = () => {
   return (
@@ -110,7 +109,7 @@ const Home = () => {
         <div className="floating-circle"></div>
       </div>
       <div className="content">
-        <section className="hero">
+        <section className="hero" id="home">
           <h1>Hi, I'm Rakesh.</h1>
           <div className="location">
             <span>Charlotte, NC</span>
@@ -118,115 +117,141 @@ const Home = () => {
           <p>I am a full-stack developer with a passion for creating innovative solutions and improving user experiences.</p>
         </section>
         
-        <section className="skills">
+        <section className="skills" id="skills">
           <h2>Skills</h2>
           <div className="skills-container">
-        <div className="skill-category">
-          <i className="fas fa-code"></i>
-          <h3>Programming Languages</h3>
-          <ul>
-            <li>C</li>
-            <li>Java</li>
-            <li>Python</li>
-            <li>JavaScript</li>
-          </ul>
-        </div>
-        <div className="skill-category">
-          <i className="fas fa-laptop-code"></i>
-          <h3>Frontend Technologies</h3>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>React JS</li>
-            <li>Angular</li>
-          </ul>
-        </div>
-        <div className="skill-category">
-          <i className="fas fa-server"></i>
-          <h3>Backend Technologies</h3>
-          <ul>
-            <li>Spring Boot</li>
-            <li>Spring MVC</li>
-            <li>REST APIs</li>
-          </ul>
-        </div>
-        <div className="skill-category">
-          <i className="fas fa-database"></i>
-          <h3>Databases</h3>
-          <ul>
-            <li>MySQL</li>
-            <li>MongoDB</li>
-            <li>Firebase</li>
-          </ul>
-        </div>
-        <div className="skill-category">
-          <i className="fas fa-cloud"></i>
-          <h3>Cloud Technologies</h3>
-          <ul>
-            <li>AWS EC2</li>
-            <li>S3 Bucket</li>
-            <li>Lambda</li>
-          </ul>
-        </div>
-        <div className="skill-category">
-          <i className="fas fa-tools"></i>
-          <h3>Tools & Others</h3>
-          <ul>
-            <li>Git</li>
-            <li>Jira</li>
-            <li>Docker</li>
-          </ul>
-        </div>
-      </div>
-        </section>
-
-        <section className="experience">
-          <h2>Experience</h2>
-          <div className="experience-container">
-        {experiences.map((experience, index) => (
-          <div className="experience-card" key={index}>
-            <h3>{experience.title}</h3>
-            <h4>{experience.company}</h4>
-            <p className="duration">{experience.duration}</p>
-            <ul>
-              {experience.details.map((detail, index) => (
-                <li key={index}>{detail}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
-        </section>
-
-        <section className="projects">
-          <h2>Projects</h2>
-          <div className="projects-container">
-        {projects.map((project, index) => (
-          <div className="project-card" key={index}>
-            <img src={project.image} alt={project.title} className="project-image" />
-            <div className="project-info">
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
-              <p><strong>Technologies:</strong> {project.technologies}</p>
-              <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">View Project</a>
+            <div className="skill-category">
+              <i className="fas fa-code"></i>
+              <h3>Programming Languages</h3>
+              <ul>
+                <li>C</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+            <div className="skill-category">
+              <i className="fas fa-laptop-code"></i>
+              <h3>Frontend Technologies</h3>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>React JS</li>
+                <li>Angular</li>
+              </ul>
+            </div>
+            <div className="skill-category">
+              <i className="fas fa-server"></i>
+              <h3>Backend Technologies</h3>
+              <ul>
+                <li>Spring Boot</li>
+                <li>Spring MVC</li>
+                <li>REST APIs</li>
+              </ul>
+            </div>
+            <div className="skill-category">
+              <i className="fas fa-database"></i>
+              <h3>Databases</h3>
+              <ul>
+                <li>MySQL</li>
+                <li>MongoDB</li>
+                <li>Firebase</li>
+              </ul>
+            </div>
+            <div className="skill-category">
+              <i className="fas fa-cloud"></i>
+              <h3>Cloud Technologies</h3>
+              <ul>
+                <li>AWS EC2</li>
+                <li>S3 Bucket</li>
+                <li>Lambda</li>
+              </ul>
+            </div>
+            <div className="skill-category">
+              <i className="fas fa-tools"></i>
+              <h3>Tools & Others</h3>
+              <ul>
+                <li>Git</li>
+                <li>Jira</li>
+                <li>Docker</li>
+              </ul>
             </div>
           </div>
-        ))}
-      </div>
         </section>
 
-        <section className="education">
+        <section className="experience" id="experience">
+          <h2>Experience</h2>
+          <div className="experience-container">
+            {experiences.map((experience, index) => (
+              <div className="experience-card" key={index}>
+                <h3>{experience.title}</h3>
+                <h4>{experience.company}</h4>
+                <p className="duration">{experience.duration}</p>
+                <ul>
+                  {experience.details.map((detail, index) => (
+                    <li key={index}>{detail}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="projects" id="projects">
+          <h2>Projects</h2>
+          <div className="projects-container">
+            {projects.map((project, index) => (
+              <div className="project-card" key={index}>
+                <img src={project.image} alt={project.title} className="project-image" />
+                <div className="project-info">
+                  <h3>{project.title}</h3>
+                  <p>{project.description}</p>
+                  <p><strong>Technologies:</strong> {project.technologies}</p>
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">View Project</a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="education" id="education">
           <h2>Education</h2>
           <div className="education-container">
-        {educationDetails.map((education, index) => (
-          <div className="education-card" key={index}>
-            <h3>{education.degree}</h3>
-            <h4>{education.institution}</h4>
-            <p className="duration">{education.duration}</p>
-            <p className="gpa">GPA: {education.gpa}</p>
+            {educationDetails.map((education, index) => (
+              <div className="education-card" key={index}>
+                <h3>{education.degree}</h3>
+                <h4>{education.institution}</h4>
+                <p className="duration">{education.duration}</p>
+                <p className="gpa">GPA: {education.gpa}</p>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
+        </section>
+
+        <section className="connect" id="connect">
+          <h2>Let's Connect</h2>
+          <div className="connect-container">
+            <div className="connect-image">
+              <img src="https://t4.ftcdn.net/jpg/01/09/23/89/360_F_109238979_8qLUFshVRXss6meBwqudhyDCxAcURXYP.jpg " alt="Connect" className="animated-image" />
+            </div>
+            <div className="connect-form">
+              <form>
+                <div className="form-group">
+                  <input type="text" id="firstName" name="firstName" placeholder="First Name" required />
+                </div>
+                <div className="form-group">
+                  <input type="text" id="lastName" name="lastName" placeholder="Last Name" required />
+                </div>
+                <div className="form-group">
+                  <input type="email" id="email" name="email" placeholder="Email" required />
+                </div>
+                <div className="form-group">
+                  <textarea id="message" name="message" placeholder="Message" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+              </form>
+            </div>
+          </div>
         </section>
       </div>
     </div>

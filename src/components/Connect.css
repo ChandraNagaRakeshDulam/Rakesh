@@ -1,0 +1,79 @@
+.connect {
+    padding: 50px 20px;
+  }
+  
+  .connect-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+  }
+  
+  .connect-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 20px; 
+  }
+  
+  .connect-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    animation: flip 6s infinite;
+  }
+  
+  .connect-form {
+    flex: 1;
+    max-width: 500px;
+    width: 100%;
+    padding: 20px; 
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 15px;
+  }
+  
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+    color: #888;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #141617;
+  }
+  
+  @keyframes flip {
+    0% {
+      transform: rotateY(0);
+    }
+    50% {
+      transform: rotateY(180deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+  
