@@ -13,7 +13,7 @@
 .home {
   position: relative;
   min-height: 100vh;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   overflow: hidden;
   text-align: center;
   padding-bottom: 80px;
@@ -114,11 +114,22 @@ section {
 .hero {
   padding: 60px 20px;
   margin-bottom: 60px;
-  min-height: 80vh; /* Ensure hero section fits the screen */
+  min-height: 80vh; 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.profile-image {
+  margin-top: 20px;
+}
+
+.profile-image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 h1 {

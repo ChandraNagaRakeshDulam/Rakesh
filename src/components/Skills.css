@@ -1,66 +1,61 @@
 .skills {
-    padding: 50px;
-    background-color: #f9f9f9;
-    text-align: center;
-  }
-  
-  .skills h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  
-  .skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .skill-category {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 250px;
-    text-align: left;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
+  padding: 100px 20px;
+  /* background-color: #ffffff; */
+}
 
-  .skill-category:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.skills-container {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+.skills-icon{
+  color: rgb(0, 70, 248);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
   }
-  
-  .skill-category i {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #61dafb;
+  100% {
+    transform: translateX(-100%);
   }
-  
-  .skill-category h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .skill-category ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .skill-category ul li {
-    font-size: 1rem;
-    margin: 5px 0;
-  }
-  
-  @media (max-width: 768px) {
-    .skills-container {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .skill-category {
-      width: 100%;
-      max-width: 400px;
-    }
-  }
-  
+}
+
+.skill-category {
+  flex: 0 0 auto;
+  margin: 0 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 8px 20px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+}
+
+.skill-category i {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.skill-category h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.skill-category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-category ul li {
+  margin-bottom: 5px;
+}
+
+.skills-animation-container {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+
