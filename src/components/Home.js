@@ -3,6 +3,7 @@ import './Home.css';
 import './Education.css';
 import './Connect.css';
 import './AchievementsCertifications.css';
+import { FaMapMarkerAlt } from 'react-icons/fa';
 
 const educationDetails = [
   {
@@ -145,14 +146,19 @@ const Home = () => {
         <div className="floating-circle"></div>
       </div>
       <div className="content">
-        <section className="hero" id="home">
-          <h1>Hi, I'm Rakesh Dulam.</h1>
-          <div className="location">
-            <span>Charlotte, NC</span>
-          </div>
-          <p>I am a java full-stack developer with a passion for creating innovative solutions and improving user experiences.</p>
-          <div className="profile-image">
-            <img src="profile.jpg" alt="Profile" />
+      <section className="hero" id="home">
+          <div className="hero-content">
+            <div>
+              <h1>Hi, I'm Rakesh Dulam.</h1>
+              <div className="location">
+              <FaMapMarkerAlt className="location-icon" />
+                <span>Charlotte, NC</span>
+              </div>
+              <p>I am a java full-stack developer with a passion for creating innovative solutions and improving user experiences.</p>
+            </div>
+            <div className="profile-image">
+              <img src="profile.jpg" alt="Profile" />
+            </div>
           </div>
         </section>
         
