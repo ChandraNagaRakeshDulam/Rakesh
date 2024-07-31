@@ -1,79 +1,95 @@
 .connect {
-    padding: 50px 20px;
+  padding: 50px;
+  background-color: var(--bg-color);
+  text-align: center;
+  color: var(--text-color);
+}
+
+.connect h2 {
+  font-size: 2.5rem;
+  margin-bottom: 90px;
+}
+
+.connect-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.connect-image {
+  flex: 1;
+  display: flex;
+  max-width: 400px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.connect-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: flip 6s infinite;
+}
+
+.connect-form {
+  flex: 1;
+  max-width: 400px;
+  padding-left: 90px;
+}
+
+.connect-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.connect-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.connect-form .form-group input,
+.connect-form .form-group textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.connect-form .form-group textarea {
+  resize: none;
+  height: 150px;
+}
+
+.connect-form button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  transition: background-color 0.3s;
+}
+
+.connect-form button:hover {
+  background-color: var(--hover-bg-color);
+  color: var(--hover-text-color);
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateY(0);
   }
-  
-  .connect-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap; 
+  50% {
+    transform: rotateY(180deg);
   }
-  
-  .connect-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    padding: 20px; 
+  100% {
+    transform: rotateY(360deg);
   }
-  
-  .connect-image img {
-    max-width: 100%;
-    border-radius: 10px;
-    animation: flip 6s infinite;
-  }
-  
-  .connect-form {
-    flex: 1;
-    max-width: 500px;
-    width: 100%;
-    padding: 20px; 
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  .form-group input,
-  .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 2px solid #000000;
-    border-radius: 15px;
-  }
-  
-  .form-group input::placeholder,
-  .form-group textarea::placeholder {
-    color: #888;
-  }
-  
-  .form-group textarea {
-    resize: vertical;
-    height: 100px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #000000;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #141617;
-  }
-  
-  @keyframes flip {
-    0% {
-      transform: rotateY(0);
-    }
-    50% {
-      transform: rotateY(180deg);
-    }
-    100% {
-      transform: rotateY(360deg);
-    }
-  }
-  
+}

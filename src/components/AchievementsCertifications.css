@@ -1,32 +1,46 @@
 .achievements-certifications {
-    padding: 50px;
-    text-align: center;
-  }
-  
-  .achievements-certifications h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  
-  .achievements-certifications-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-  }
-  
-  .achievements-certifications ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .achievements-certifications ul li {
-    font-size: 1.2rem;
-    margin: 5px 0;
-  }
-  
-  .badge-upload img {
-    width: 150px;
-    height: auto;
-  }
-  
+  padding: 50px;
+  text-align: center;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.achievements-certifications h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.achievements-certifications-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.achievements-certifications ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.achievements-certifications ul li {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  color: var(--text-color);
+}
+
+.badge-upload img {
+  width: 150px;
+  height: auto;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --card-bg-color: #ffffff;
+}
+
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --card-bg-color: #1e1e1e;
+}

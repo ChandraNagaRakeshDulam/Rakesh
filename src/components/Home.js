@@ -183,9 +183,9 @@ const Home = () => {
       <section className="hero" id="home">
           <div className="hero-content">
             <div>
-              <h1>Hi, I'm Rakesh Dulam.</h1>
+              <h1>Hi, I'm Rakesh Dulam</h1>
               <div className="location">
-              <FaMapMarkerAlt className="location-icon" />
+                <FaMapMarkerAlt className="location-icon" />
                 <span>Charlotte, NC</span>
               </div>
               <p>I am a java full-stack developer with a passion for creating innovative solutions and improving user experiences.</p>
@@ -327,7 +327,7 @@ const Home = () => {
         </section>
 
         <section className="connect" id="connect">
-          <h2>Let's Connect</h2>
+          <h2>Connect</h2>
           <div className="connect-container">
             <div className="connect-image">
               <img src="https://t4.ftcdn.net/jpg/01/09/23/89/360_F_109238979_8qLUFshVRXss6meBwqudhyDCxAcURXYP.jpg" alt="Connect" className="animated-image" />

@@ -1,6 +1,7 @@
 .skills {
   padding: 100px 20px;
-  /* background-color: #ffffff; */
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 .skills-container {
@@ -24,11 +25,12 @@
 .skill-category {
   flex: 0 0 auto;
   margin: 0 20px;
-  background-color: #fff;
+  background-color: var(--navbar-bg-color);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 2px 8px 20px rgba(0, 0, 0, 0.1);
   min-width: 200px;
+  color: var(--text-color);
 }
 
 .skill-category i {
@@ -57,5 +59,3 @@
   display: flex;
   align-items: center;
 }
-
-
