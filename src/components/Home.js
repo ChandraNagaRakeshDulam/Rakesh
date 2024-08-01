@@ -191,7 +191,7 @@ const Home = () => {
               <p>I am a java full-stack developer with a passion for creating innovative solutions and improving user experiences.</p>
             </div>
             <div className="profile-image">
-              <img src="profile.jpg" alt="Profile" />
+              <img src={`${process.env.PUBLIC_URL}/profile.jpg`} alt="Profile" />
             </div>
           </div>
         </section>
@@ -321,7 +321,7 @@ const Home = () => {
               ))}
             </ul>
             <div className="badge-upload">
-              <img src="aws.png" alt="AWS Badge" />
+              <img src={`${process.env.PUBLIC_URL}/aws.png`} alt="AWS Badge" />
             </div>
           </div>
         </section>
