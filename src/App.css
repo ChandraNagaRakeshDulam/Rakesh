@@ -63,7 +63,7 @@ code {
 .darkmode-container {
   display: flex;
   align-items: center;
-  margin-top: 40px;
+  padding-right: 15px;
   justify-content: center;
 }
 
@@ -193,8 +193,43 @@ code {
   fill: #ffcc33;
 }
 
-
-
 .content {
-  padding-top: 30px; 
+  padding-top: 60px; 
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: var(--text-color);
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    background-color: var(--navbar-bg-color);
+    width: 100%;
+    height: calc(100vh - 60px);
+    transition: left 0.3s ease;
+  }
+  .navbar ul li {
+    margin: 15px 0;
+  }
+  .navbar ul.show {
+    left: 0;
+  }
+  .hamburger {
+    display: flex;
+    padding-right: 35px;
+  }
 }

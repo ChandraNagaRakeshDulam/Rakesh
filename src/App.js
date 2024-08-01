@@ -12,6 +12,7 @@ import logo from './RD.png';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     if (darkMode) {
@@ -21,25 +22,34 @@ function App() {
     }
   }, [darkMode]);
 
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <Router>
       <div className="App">
         <nav className="navbar">
           <img src={logo} alt="Logo" className="logo" />
-          <ul>
-            <li><Link to="home" smooth={true} duration={500}>Home</Link></li>
-            <li><Link to="skills" smooth={true} duration={500}>Skills</Link></li>
-            <li><Link to="experience" smooth={true} duration={500}>Experience</Link></li>
-            <li><Link to="projects" smooth={true} duration={500}>Projects</Link></li>
-            <li><Link to="education" smooth={true} duration={500}>Education</Link></li>
+          <div className="hamburger" onClick={toggleMenu}>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <ul className={menuOpen ? 'show' : ''}>
+            <li><Link to="home" smooth={true} duration={500} onClick={toggleMenu}>Home</Link></li>
+            <li><Link to="skills" smooth={true} duration={500} onClick={toggleMenu}>Skills</Link></li>
+            <li><Link to="experience" smooth={true} duration={500} onClick={toggleMenu}>Experience</Link></li>
+            <li><Link to="projects" smooth={true} duration={500} onClick={toggleMenu}>Projects</Link></li>
+            <li><Link to="education" smooth={true} duration={500} onClick={toggleMenu}>Education</Link></li>
             <li className="dropdown">
               <span>Resume</span>
               <div className="dropdown-content">
-                <a href="/Resume_Rakesh.pdf" target="_blank" rel="noopener noreferrer">View</a>
-                <a href="/Resume_Rakesh.pdf" download>Download</a>
+                <a href="/Resume_Rakesh.pdf" target="_blank" rel="noopener noreferrer" onClick={toggleMenu}>View</a>
+                <a href="/Resume_Rakesh.pdf" download onClick={toggleMenu}>Download</a>
               </div>
             </li>
-            <li><Link to="connect" smooth={true} duration={500}>Connect</Link></li>
+            <li><Link to="connect" smooth={true} duration={500} onClick={toggleMenu}>Let's Connect</Link></li>
             <li className="darkmode-container">
               <input
                 type="checkbox"
