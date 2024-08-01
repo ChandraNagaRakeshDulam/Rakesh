@@ -51,7 +51,7 @@ code {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 0px;
 }
 
 .logo {
@@ -63,7 +63,7 @@ code {
 .darkmode-container {
   display: flex;
   align-items: center;
-  padding-right: 15px;
+  padding-right: 0px;
   justify-content: center;
 }
 
@@ -207,7 +207,7 @@ code {
   width: 25px;
   height: 3px;
   background-color: var(--text-color);
-  margin: 4px 0;
+  margin: 2px 0;
   transition: 0.4s;
 }
 
@@ -215,7 +215,7 @@ code {
   .navbar ul {
     flex-direction: column;
     position: absolute;
-    top: 60px;
+    top: 40px;
     left: -100%;
     background-color: var(--navbar-bg-color);
     width: 100%;
@@ -223,7 +223,7 @@ code {
     transition: left 0.3s ease;
   }
   .navbar ul li {
-    margin: 15px 0;
+    margin: 0;
   }
   .navbar ul.show {
     left: 0;
@@ -231,5 +231,12 @@ code {
   .hamburger {
     display: flex;
     padding-right: 35px;
+  }
+  .logo{
+    margin-top: 3px;
+  }
+  .hamburger-div {
+    display: flex;
+    margin: 0;
   }
 }

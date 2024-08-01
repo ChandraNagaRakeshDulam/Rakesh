@@ -6,10 +6,10 @@
 
 .skills-container {
   display: flex;
-  animation: scroll 20s linear infinite;
+  animation: scroll 15s linear infinite;
 }
 
-.skills-icon{
+.skills-icon {
   color: rgb(0, 70, 248);
 }
 
@@ -58,4 +58,51 @@
   white-space: nowrap;
   display: flex;
   align-items: center;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 1024px) {
+  .skills-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .skill-category {
+    flex: 1 1 calc(50% - 40px); /* Adjust width for medium screens */
+    margin: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills {
+    padding: 30px 10px; /* Reduce padding for smaller screens */
+  }
+  
+  .skills-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: none; /* Disable animation for smaller screens */
+  }
+  
+  .skill-category {
+    flex: 1 1 calc(100% - 40px); /* Adjust width for small screens */
+    margin: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills {
+    padding: 20px 15px; 
+  }
+  
+  .skills-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: none; 
+  }
+  
+  .skill-category {
+    flex: 1 1 calc(100% - 20px); 
+    margin: 10px;
+  }
 }

@@ -44,3 +44,41 @@ body.dark-mode {
   --text-color: #ffffff;
   --card-bg-color: #1e1e1e;
 }
+
+@media (max-width: 768px) {
+  .achievements-certifications-container {
+    flex-direction: column;
+    gap: 20px; 
+  }
+
+  .achievements-certifications h2 {
+    font-size: 2rem; 
+  }
+
+  .achievements-certifications ul li {
+    font-size: 1rem; 
+  }
+
+  .badge-upload img {
+    width: 120px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .achievements-certifications-container {
+    flex-direction: column;
+    gap: 10px; 
+  }
+
+  .achievements-certifications h2 {
+    font-size: 1.5rem; 
+  }
+
+  .achievements-certifications ul li {
+    font-size: 0.9rem; 
+  }
+
+  .badge-upload img {
+    width: 100px; 
+  }
+}
