@@ -27,7 +27,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <Router basename="/Rakesh/">
       <div className="App">
         <nav className="navbar">
           <img src={logo} alt="Logo" className="logo" />
