@@ -45,8 +45,8 @@ function App() {
             <li className="dropdown">
               <span>Resume</span>
               <div className="dropdown-content">
-                <a href="/Rakesh/Resume_Rakesh.pdf" target="_blank" rel="noopener noreferrer" onClick={toggleMenu}>View</a>
-                <a href="/Rakesh/Resume_Rakesh.pdf" download onClick={toggleMenu}>Download</a>
+                <a href={`${process.env.PUBLIC_URL}/Resume_Rakesh.pdf`} target="_blank" rel="noopener noreferrer">View</a>
+                <a href={`${process.env.PUBLIC_URL}/Resume_Rakesh.pdf`} download>Download</a>
               </div>
             </li>
             <li><Link to="connect" smooth={true} duration={500} onClick={toggleMenu}>Let's Connect</Link></li>
