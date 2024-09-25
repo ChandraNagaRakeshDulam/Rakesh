@@ -127,12 +127,14 @@ body {
 .content {
   position: relative;
   padding: 0px;
-  margin: 0; 
+  margin: 0;
+  margin-top: 0; 
   width: 100%; 
 }
 
 .hero {
   padding: 60px 0px;
+  margin-top: 60px;
   margin-bottom: 40px;
   min-height: 80vh; 
   display: flex;
@@ -223,7 +225,6 @@ button[type="submit"]:hover {
   background-color: #8b8989;
 }
 
-/* Responsive design adjustments */
 @media (max-width: 1024px) {
   .profile-image {
     zoom: 200%;

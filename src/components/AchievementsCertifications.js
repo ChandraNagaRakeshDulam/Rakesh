@@ -21,6 +21,7 @@ const AchievementsCertifications = () => {
         </ul>
         <div className="badge-upload">
           <img src={`${process.env.PUBLIC_URL}/aws.png`} alt="AWS Badge" />
+          <img src={`${process.env.PUBLIC_URL}/cloud.png`} alt="AWS Cloud Badge" />
         </div>
       </div>
     </section>
